@@ -34,7 +34,7 @@ public class ProducerDemoWithThreads {
             try {
                 int i = 0;
                 while (true) {
-                    ProducerRecord<String, String> record = new ProducerRecord<>(topic, "World" + i, "Fuck" + i);
+                    ProducerRecord<String, String> record = new ProducerRecord<>(topic, "World" + i, "F" + i);
                     i++;
                     kafkaProducer.send(record,(recordMetadata,e)->{
 
