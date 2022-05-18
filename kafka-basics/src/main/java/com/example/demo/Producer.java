@@ -27,7 +27,7 @@ public class Producer {
 
 
         IntConsumer myfun= i->{
-            ProducerRecord<String,String>record=new ProducerRecord<>("first_topic","World"+i,"Fuck"+i);
+            ProducerRecord<String,String>record=new ProducerRecord<>("first_topic","World"+i,"Ft"+i);
             kafkaProducer.send(record,(recordMetadata,e)->{
 
                 if(e==null){
